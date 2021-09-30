@@ -128,7 +128,10 @@ You can create a Studio with the Quick start option just entering a name and cho
 
 Once the Studio is created, click on Open studio.
 
-[open-studio]
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/86348959/135506594-2a8a4a33-d068-424e-bca9-f5b750d4e208.png" />
+</p>
+
 
 Now that you are in, you can start a Machine Learning project!
 
