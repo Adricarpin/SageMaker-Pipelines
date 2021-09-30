@@ -47,9 +47,7 @@ In our project, the raw data is the "adult.csv" file, and the processed data fil
 
 Once we know all of this (hope you also remember the file names), let's see our pipeline diagram:
 
-
-[diagrama]
-
+![pipeline-sagemaker drawio](https://user-images.githubusercontent.com/86348959/135494081-cd0d9059-6927-4d0f-bbfe-45765a65bac2.png)
 
 NOTE: "Create Model Step" and "Register Model Step" are independent steps that don't follow and specific order. 
 
