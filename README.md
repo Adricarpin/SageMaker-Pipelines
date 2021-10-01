@@ -1,10 +1,5 @@
 # Amazon SageMaker Pipelines: Deploying End-to-End Machine Learning Pipelines in the Cloud
 
-Built a Machine Learning pipeline that goes from raw data to model deployment with one of the most advanced tools of the moment. 
-
-<br/><br/> 
-<br/><br/> 
-
 
 # Introduction
 
