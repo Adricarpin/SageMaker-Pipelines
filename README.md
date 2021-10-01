@@ -3,9 +3,9 @@
 
 # Introduction
 
-Cloud computing is one of the fastest growing skills in the Machine Learning world. Among cloud services companies, Amazon stands out for providing one of the most advanced tools for Machine Learning: Amazon SageMaker. Using SageMaker you can, among many other things, build, test and deploy Machine Learning models. Furthermore, you can create End-to-End pipelines in order to integrate your models in a CI/CD process.
+Cloud computing is one of the fastest growing skills in the Machine Learning world. Among cloud services companies, Amazon stands out for providing one of the most advanced tools for Machine Learning: Amazon SageMaker. Using SageMaker you can, among many other things, build, test and deploy Machine Learning models. Furthermore, you can create End-to-End pipelines in order to integrate your models in a CI/CD environment.
 
-In this repository we are going to use Amazon SageMaker to create an End-to-End pipeline step by step. First, we will look into an overview of the project, then we will go with some theoretical explanations, and last but not least, we will code. For the coding section we will use [this Jupyter notebook](https://github.com/Adricarpin/SageMaker-Pipelines/blob/master/SageMaker-Pipeline.ipynb).
+In this repository we are going to use Amazon SageMaker to create an End-to-End pipeline step by step. First, we will do an overview of the project, then we will go with some theoretical explanations, and last but not least, we will code. For the coding section we will use [this Jupyter notebook](https://github.com/Adricarpin/SageMaker-Pipelines/blob/master/SageMaker-Pipeline.ipynb).
 
 
 We will work with [Adult Census Income](https://www.kaggle.com/uciml/adult-census-income) Dataset. We will use 'income', a binary variable that explains if a person earns more than 50k or not, as the target variable. For the training step, we will use an image of XGBoost provided by AWS. 
@@ -67,7 +67,7 @@ In order to create pipeline steps we use [steps classes](https://docs.aws.amazon
 
 ## The ProcessingStep class
 
-For our "Preprocessing Step" and "Evaluation Step" we will use a ```ProcessingStep``` class (you can see the documentation [here](https://sagemaker.readthedocs.io/en/stable/workflows/pipelines/sagemaker.workflow.pipelines.html)). Basically, This is the class that SageMaker uses to build the steps where we process  data. When building a ```ProcessingStep```, you have to pass a Processor instance and the code. The code is just a Python script where you process the data. A Processor instance is a Docker image with the specifications to run the step. 
+For our "Preprocessing Step" and "Evaluation Step" we will use a ```ProcessingStep``` class (you can see the documentation [here](https://sagemaker.readthedocs.io/en/stable/workflows/pipelines/sagemaker.workflow.pipelines.html)). Basically, this is the class that SageMaker uses to build the steps where we process  data. When building a ```ProcessingStep```, you have to pass a Processor instance and the code. The code is just a Python script where you process the data. A Processor instance is a Docker image with the specifications to run the step. 
 
 Wait, so I have to create a Docker image? 
 
@@ -159,7 +159,7 @@ Python 3 (Data Science) works for me.
 
 Now you are ready to run the notebook and build a SageMaker Pipeline! 
 
-I now, you have a complete notebook in your hands and maybe you will want to run every cell in one go and look if it works, but remember what the best practices are. I highly encourage you to read slowly the code and comments and extract the gist of it. Then play with the code: I challenge you to try to replicate the pipeline with a different dataset, or to change the Build-in estimator to an estimator made with the "script mode in a supported framework" option (see [Use XGBoost as a framework](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html)). You can also try to implement [new steps](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html#step-type-tuning).
+I now, you have a complete notebook in your hands and maybe you will want to run every cell in one go and look if it works, but remember what the best practices are. I highly encourage you to read slowly the code and comments and extract the gist of it. Then play with the code: I challenge you to try to replicate the pipeline with a different dataset, or to change the Build-in estimator to an estimator made with the "script mode in a supported framework" option (see [Use XGBoost as a framework](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html)). You can also try to implement [new steps](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html).
 
 Once you end with the notebook, you will know how to create a pipeline with Amazon SageMaker!
 
