@@ -3,9 +3,9 @@
 
 # Introduction
 
-Cloud computing is one of the fastest growing skills in the Machine Learning world.  Among cloud service provider companies, Amazon stands out for providing one of the most advanced tools for Machine Learning: Amazon SageMaker. Using SageMaker, you can build, test and and deploy Machine Learning models. Furthermore, you can create End-to-End pipelines in order to integrate your models in a CI/CD process. 
+Cloud computing is one of the fastest growing skills in the Machine Learning world. Among cloud services companies, Amazon stands out for providing one of the most advanced tools for Machine Learning: Amazon SageMaker. Using SageMaker you can, among many other things, build, test and deploy Machine Learning models. Furthermore, you can create End-to-End pipelines in order to integrate your models in a CI/CD process.
 
-In this post we are going to use Amazon SageMaker to create an End-to-End pipeline step by step. First, we will look into an overview of the project, then we will go with some theoretical explanations, and last but not least, we will code. For the coding section we will use [this Jupyter notebook](https://github.com/Adricarpin/SageMaker-Pipelines/blob/master/SageMaker-Pipeline.ipynb).
+In this repository we are going to use Amazon SageMaker to create an End-to-End pipeline step by step. First, we will look into an overview of the project, then we will go with some theoretical explanations, and last but not least, we will code. For the coding section we will use [this Jupyter notebook](https://github.com/Adricarpin/SageMaker-Pipelines/blob/master/SageMaker-Pipeline.ipynb).
 
 
 We will work with [Adult Census Income](https://www.kaggle.com/uciml/adult-census-income) Dataset. We will use 'income', a binary variable that explains if a person earns more than 50k or not, as the target variable. For the training step, we will use an image of XGBoost provided by AWS. 
